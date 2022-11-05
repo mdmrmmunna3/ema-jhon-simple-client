@@ -1,0 +1,49 @@
+/* 2 type of css in react .... 
+1. modules css > this css you can use to inside css file > Button.module.css 
+2. generic css . this css you can you any components folders file .
+
+*/
+ 
+/* this is generic css  */
+
+.shop-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    margin: 100px 50px;
+    
+}
+
+.review-order-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 17px;
+    color: white;
+    background-color: #ff9900e8;
+    border: none;
+    border-radius: 4px;
+}
+
+.review-order-btn:hover {
+    background-color: #FF9900;
+}
+
+.arrow-icon {
+    margin-left: 6px;
+}
+
+.cart-container {
+    background-color: rgba(255, 153, 0, 0.3);
+}
+
+@media screen and (max-width:1100px){
+    .products-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
